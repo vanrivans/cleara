@@ -3,6 +3,12 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
+import './library/bootstrap'
+import './library/toast'
+import axios from 'axios'
+
+axios.defaults.baseURL = process.env.VUE_APP_BACKEND_URL
+
 Vue.config.productionTip = false
 
 new Vue({
